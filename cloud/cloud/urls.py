@@ -23,4 +23,5 @@ urlpatterns = [
     path('',include('authentication.urls')),
     path('',include('dataanalysis.urls')),
     path('api/centeral', views.centeralList.as_view()),
+    path('api-auth/' ,include('rest_framework.urls')),
 ]
