@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from centeral import views
+from authentication import views as authenticationviews
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +26,5 @@ urlpatterns = [
     path('',include('dataanalysis.urls')),
     path('api/centeral', views.centeralList.as_view()),
     path('api-auth/' ,include('rest_framework.urls')),
+    path('register/',authenticationviews.register,name='register'),
 ]
