@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from centeral import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('centeral.urls')),
     path('',include('authentication.urls')),
     path('',include('dataanalysis.urls')),
+    path('api/centeral', views.centeralList.as_view()),
 ]

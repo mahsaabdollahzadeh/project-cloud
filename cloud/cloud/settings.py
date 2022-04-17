@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'centeral',
     'authentication',
     'dataanalysis',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
