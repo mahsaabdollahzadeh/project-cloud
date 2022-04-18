@@ -6,8 +6,7 @@ from .serializers import centeralSerializer
 
 
 # Create your views here.
-def centarl(request):
-    return HttpResponse('hi ...')
+
 
 class centeralList(generics.ListAPIView):
     queryset = centeral.objects.all()
