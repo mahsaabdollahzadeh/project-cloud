@@ -81,9 +81,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-        'airport':E:\abr\Project Datas\airports.csv / 'airports.csv',
-        'carriers':E:\
-
     }
 }
 
