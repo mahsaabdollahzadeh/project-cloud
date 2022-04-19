@@ -3,8 +3,8 @@ from django.urls import path
 from .import views
 
 
-
+app_name='centeral',
 urlpatterns = [
-    path('', views.centarl),
+    path('', views.centeral, name='centeral'),
 
 ]

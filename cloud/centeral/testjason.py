@@ -3,6 +3,7 @@ import csv
 
 
 
- with open('/E:/abr/Project Datas/airport.csv', newline='') as f:
-    print "a"
+ with open('airport.py') as f:
+    t= json.load('f')
+    print(t)
 
